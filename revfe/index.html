@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro JS</title>
+    <style>
+
+        button {
+            cursor: progress;
+        }
+
+        #mensagem {
+            color: blue;
+            background-color: aquamarine
+        }
+
+    </style>
+</head>
+<body>
+
+    <button onclick="mostrarMensagem()">Não aperte esse botão</button>
+    <button onclick="fazerLimpeza()">Limpar</button>
+    <div id="mensagem"></div>
+
+    <script>
+        function mostrarMensagem() {
+            var $bloco = document.getElementById("mensagem");
+            $bloco.innerHTML = "Eu falei para você não apertar, agora vai ter que limpar!";
+        }
+    
+        function fazerLimpeza() {
+            var $apagarbloco = document.getElementById("mensagem");
+            $apagarbloco.innerHTML = "";
+        }
+    </script>
+
+</body>
+</html>
